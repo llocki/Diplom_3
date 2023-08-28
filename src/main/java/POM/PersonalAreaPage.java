@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
 
 public class PersonalAreaPage {
@@ -17,10 +16,9 @@ public class PersonalAreaPage {
     }
 
 
-
     static final By personalArea = By.xpath(".//p[text()='Личный Кабинет']");//Кнопка для перехода в личный кабинет
-
     private final By entrance = By.xpath(".//a[text()='Восстановить пароль']");
+
 
     @Step("Go to personal account")
     public void goToPersonalAccount (){

@@ -5,13 +5,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
 
 public class LoginPage {
 
     private WebDriver driver;
-
 
 
     public LoginPage(WebDriver driver) {
@@ -20,23 +18,14 @@ public class LoginPage {
 
 
     static final By homePageLogin = By.xpath(".//button[text()='Войти в аккаунт']");//Кнопка вход на главной странице
-
     static final By personalArea = By.xpath(".//p[text()='Личный Кабинет']");//Кнопка для перехода в личный кабинет
-
     static final By personalAreaText = By.xpath(".//p[starts-with(text(),'В этом разделе')]");//текст в личном кабинете
-
-
     static final By loginButton = By.xpath(".//button[text()='Войти']"); //Кнопка войти на странице логина
-
     static final By loginButtonRegictration = By.xpath(".//a[@href='/login']") ;//Кнопка войти в поле регистрации
-
     static final By fieldEmail = By.xpath(".//input[@name='name']");
     static final By fieldPassword = By.xpath(".//input[@name='Пароль']");
-
     static final By constructorButton = By.xpath(".//p[text()='Конструктор']");// Кнопка конструктора в личном кабинете
-
     static final By exitButton = By.xpath(".//button[text()='Выход']");// Кнопка выхода в личном кабинете
-
     static final By assembleTheBurgerText = By.xpath(".//h1[text()='Соберите бургер']");// Текст на главной странице для проверки
     static final By logo = By.xpath(".//div[@class='AppHeader_header__logo__2D0X2']");// Логотип сайта
 

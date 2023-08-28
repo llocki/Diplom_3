@@ -9,15 +9,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import static org.junit.Assert.assertEquals;
 
-/*
-<dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
-            <!--Тег scope указывает на область видимости зависимости: она видна только тестовым классам в директории src/test/java-->
-            <scope>test</scope>
-        </dependency>
-*/
 
 public class LoginPageTest extends BaseUserCreatingAndDeletet {
 
@@ -42,9 +33,7 @@ public class LoginPageTest extends BaseUserCreatingAndDeletet {
     @DisplayName("Checking the login on the login button on the main")
     public void loginHomePageTest() {// Вход по кнопке войти на главной
 
-
         UserDTO user = new UserDTO("ivanov_101@gmail.com", "1234567", "ivanov");
-
 
         LoginPage loginPage = new LoginPage(driver);
 

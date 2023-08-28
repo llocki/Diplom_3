@@ -16,12 +16,11 @@ public class HomePage {
         this.driver = driver;
     }
 
-    static final By blueLine =By.cssSelector(".tab_tab_type_current__2BEPc");
-
-
+    static final By blueLine =By.cssSelector(".tab_tab_type_current__2BEPc");// Синяя линия
     static final By rolls = By.xpath(".//span[text()= 'Булки']"); // Булки
     static final By sauces = By.xpath(".//span[text()= 'Соусы']"); // Соусы
     static final By filling = By.xpath(".//span[text()= 'Начинки']"); //Начинки
+
 
     @Step("Getting the location of the bun")
     public Point rollsSearch(){

@@ -37,10 +37,9 @@ public class PersonalAreaPageTest {
 
         personalAreaPage.goToPersonalAccount();
 
-        boolean expected = true;
         boolean actual = personalAreaPage.isThereALink();
 
-        assertEquals(expected, actual);
+        assertTrue(actual);
     }
 
     @After

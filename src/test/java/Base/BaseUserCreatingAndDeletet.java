@@ -16,10 +16,11 @@ public class BaseUserCreatingAndDeletet {
     public void creating() {
 
         String baseUrl = RestAssured.baseURI = "https://stellarburgers.nomoreparties.site";
+
         UserDTO user = new UserDTO("ivanov_101@gmail.com", "1234567", "ivanov");
 
         UserClientCreating userClientCreating = new UserClientCreating();
-        Response response = userClientCreating.Creating(user);
+        userClientCreating.Creating(user);
 
     }
 
@@ -39,6 +40,6 @@ public class BaseUserCreatingAndDeletet {
 
         //Удаление пользователя
         UserClientDeleted userClientDeleted = new UserClientDeleted();
-        Response response_1 = userClientDeleted.Delete(accessToken);
+        userClientDeleted.Delete(accessToken);
     }
 }

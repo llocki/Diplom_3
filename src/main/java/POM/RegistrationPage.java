@@ -3,14 +3,10 @@ package POM;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
-import java.util.Random;
+
 
 public class RegistrationPage {
 
@@ -27,19 +23,14 @@ public class RegistrationPage {
     static final By email = By.xpath(".//label[.='Email']/../input");
     static final By password = By.xpath(".//label[.='Пароль']/../input");
     static final By buttonLogin = By.xpath(".//button[text()='Зарегистрироваться']");
-
     private final By entrance = By.xpath(".//a[text()='Восстановить пароль']");
-
     private final By incorrectPassword = By.xpath(".//p[.='Некорректный пароль']");
     //----------------------------------------------------------------------------------------------
     //Тестовые данные
 
 
     static final String userName = "Bob" ;
-
-    static int randomCompany = new Random().nextInt();
-    static final String userEmail = "ivanov_" + randomCompany + "@gmail.com";
-
+   static final String userEmail = "ivanov_307@gmail.com";
     static final String userPassword = "1234567";
     static final String userPasswordError = "123";
 
